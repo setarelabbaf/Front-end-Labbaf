@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+body {
+    background-color: darkgray;
+}
+.container {
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-box {
+    margin-top: 50px;
+}
+.container-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    gap: 10px;
+}
+.products {
+    width: 100%;
+    height: 100px;
+    /* background-color: #607D8B; */
+}
+.product-item {
+    width: 100%;
+    height: max-content;
+    box-shadow: 2px 2px 2px rgb(78, 77, 77);
+}
+.show-all {
+    border: hidden;
+    color: dodgerblue;
+}
