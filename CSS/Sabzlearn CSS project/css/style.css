@@ -1,36 +1,100 @@
+@font-face {
+    font-family: "Shabnam";
+    src: url("../assets/fonts/Shabnam-FD.woff2") format("woff2");
+}
 * {
     margin: 0;
     box-sizing: content-box;
 }
 body {
-    background-color: darkgray;
+    background-color: rgb(245, 245, 245);
+    font-family: "Shabnam";
 }
 .container {
-    width: 1280px;
+    width: 1216px;
     margin-right: auto;
     margin-left: auto;
 }
-.header-box {
+.header {
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
+    gap: 6px;
 }
+.header-box {
+    font-size: x-large;
+}
+
 .container-items {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .products {
     width: 100%;
-    height: 100px;
-    /* background-color: #607D8B; */
+    height: fit-content;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgb(218, 218, 218, 0.08);
 }
-.product-item {
+.product-image {
     width: 100%;
     height: max-content;
-    box-shadow: 2px 2px 2px rgb(78, 77, 77);
 }
 .show-all {
     border: hidden;
     color: dodgerblue;
+    background: none;
+    font-size: large;
+}
+.product-content{
+    padding: 20px;
+    font-weight: 500;
+}
+.offer {
+    width: max-content;
+    background-color: #c2e7ff;
+    color: #173c559a;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.real-price {
+    text-decoration: line-through;
+    font-size: small;
+    color: rgb(83, 83, 83);
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding-top: 10px;
+}
+.price-span {
+    color: rgb(80, 80, 80);
+    font-size: small;
+}
+.price-now {
+    font-weight: 700;
+    font-size: larger;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    color: blue;
+}
+.checked{
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 174, 0);
+}
+.rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
