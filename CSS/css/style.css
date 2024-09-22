@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     margin: 0;
 }
-.title::before {
+/* .title::before {
     content: "";
     height: 5px;    
     width: 180px;
@@ -13,4 +13,12 @@ body {
     position: absolute;
     top: 215px;
     left: 5px;
+} */
+.cover {
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    background-image:linear-gradient(to right bottom, #ffcc33 , #fcf0ca3b) , 
+    url("https://www.w3schools.com/codeeditor.webp");
+    box-sizing: cover;
 }

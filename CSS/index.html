@@ -16,7 +16,10 @@
      heigth -> property
      200px -> value
        -->
-
+      <!-- 
+      inherit -> مقدارش رو از پرنت میگیره 
+      initial -> حالت دیفالت و پیش فرض و اولیه برمیگردونه 
+      -->
        selectors
         <!-- 
        element -> تگ هایی با مشخصه ی المنت
@@ -31,11 +34,18 @@
         <!-- 
         background -> کل آیتم های پایین رو به ترتیب میگیره
         background-color -> رنگ پس زمینه
-        background-image -> (تصویر پس زمینه (در ابعادی که مشخص میکنیم
+        background-color -> transparent; -> پس زمنیه ی پرنتش رو میگیره در واقع شفاف میشه
+        background-image: url(); -> (تصویر پس زمینه (در ابعادی که مشخص میکنیم
         background-repeat -> تکرار تصویر پس زمینه ای که ساختیم
         background-attachment -> حالت اسکرول یا فیکس تصویر بکگراند رو توی اسکرول مشخص میکنه
         background-posotion -> موقعیت تصویر پس زمینه در ابعادی که مشخص کردیم
+        background-size -> اندازه (عدد و درصد) میگیره و توی عرض و ارتفاعی که دادیم مشخص میکنیم چه اندازه رو بگیره.
         -->
+        Gradients
+        <!-- 
+        background-image: linear-gradient(#rgb) -> برای رنگین کمونی کردن اون قسمت مشخص به کار میره و حالت تابعی داره یعنی ورودی و خروجی داره
+        background-image: linear-gradient(direction, #rgb) -> دایرکشن مسیر رو مشخص میکنه 
+                -->
         borders
          <!-- 
         border -> همه رو به ترتیب پایین میذاریم.
@@ -111,10 +121,21 @@
       word-spacing: 24px; => فاصله ی بین کلمات رو مشخص میکنه چقدر باشه
       white-spacing: 24px; => مشخص میکنه که متن از فاصله ی مشخص شده خارج بزنه یا نه
        -->
+      Text Effect
+      <!-- 
+      white-space: nowrap; -> وقتی استفاده میشه که میخوایم متن توی ابعادی که تعریف کردیم نشکنه و در یک خط ادامه پیدا کنه
+      text-overflow: nowrap; -> ellipsis; -> متن که سرریز شد، توی همون خط نگهش دار و برای ادامه ش سه نقطه قرار بده.
+      writing-mode: vertical-lr; -> نشون میده تکست کدوم سمتی باشه مثلا اینجا عمودیه.
+      -->
       Text Shadow
-       <!-- 
-      text-shadow: 2px 2px 0px #ffff;
-       -->
+      <!-- 
+        text-shadow: 2px 2px 0px #ffff;
+        -->
+      Box Shadow
+      <!-- 
+       box-shadow: 2px 2px 14px rgba(0,0,0,0.2);
+       inset رو که بعد از رنگ بهش اضافه کنیم، از حالت برجسته به حالت فرورفته تغییر پیدا میکنه
+      -->
      font family
       <!-- 
       font-family: Dana, curisive;
@@ -139,6 +160,7 @@
         .a:active{bg-color: #ffffff}
         .a:link{}
         .a:visited{}
+        cursor: pointer; -> معمولا پوینتر استفاده میشه و منظور موس هست که به چه صورت بشه روی المنت
       -->
       Pseudo classes 2
        <!-- 
@@ -242,12 +264,36 @@
       کد css: ;}
     -->
 
-    <h1 class="title">134,000 t</h1>
-    
-    <!-- Mini Projects -->
-     <!-- 
-    1216px width
-    color: fafa
+    Function -> برای اندازه دادن میشه از توابع بصورت زیر استفاده کرد و کلا خروجی عدد بهمون میدن
+    <!-- 
+    width: calc (100% - 10px)
+    width: min (100px, 500px, 900px) کمترین عدد رو انتخاب میکنه
+    width: max (100px, 500px, 900px) بیشترین عدد رو انتخاب میکنه
+    width: clamp(200px, 400px, 800px) حداقل 200 پیکسل باش تو حالت عادی 400 پیکسل باش و ماکسیمم 800 پیکسل باش
+    width: minmax ()
+     -->
+    Transition -> تغییر مقدار پروپرتی به حالت نرمی انجام بشه نه یهویی و روی حالت همه قرار میدیم all.به کد اصلی میدیم که هم وقتی موس میره سمتش اعمال بشه هم وقتی از روش برداشته میشه
+    <!-- 
+    transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    transition: all 250ms ease-in 5s;
     -->
+    Transforms
+    <!-- 
+    transform: rotate(10deg);
+    transform: scale(0.8);
+    transform: skew(10deg);
+    transform: translateX(20px);
+    transform: translate(20px 10px);
+    transform-orgin: 10px;
+    -->
+    variables in css -> مواردی که زیاد توی  سی اس اس استفاده میشه
+    <!-- 
+    :root{
+    --Primary-color: #3949AB;
+    }
+    color: var(--Primary-color);
+    -->
+<div class="cover"></div>
+    
 </body>
 </html>
